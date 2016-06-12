@@ -1,4 +1,4 @@
-package com.leon.DOMTest;
+package com.leon.domtest;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -66,19 +66,19 @@ public class DOMTest {
 //						System.out.println(
 //								childNodes.item(k).getFirstChild().getNodeValue());
 						System.out.println(childNodes.item(k).getTextContent());
-						if(childNodes.item(k).getNodeName()=="name"){
+						if(childNodes.item(k).getNodeName().equals("name")){
 							bookObj.setName(childNodes.item(k).getTextContent());
 						}
-						if(childNodes.item(k).getNodeName()=="author"){
+						if(childNodes.item(k).getNodeName().equals("author")){
 							bookObj.setAuthor(childNodes.item(k).getTextContent());
 						}
-						if(childNodes.item(k).getNodeName()=="year"){
+						if(childNodes.item(k).getNodeName().equals("year")){
 							bookObj.setYear(childNodes.item(k).getTextContent());
 						}
-						if(childNodes.item(k).getNodeName()=="price"){
+						if(childNodes.item(k).getNodeName().equals("price")){
 							bookObj.setPrice(childNodes.item(k).getTextContent());
 						}
-						if(childNodes.item(k).getNodeName()=="language"){
+						if(childNodes.item(k).getNodeName().equals("language")){
 							bookObj.setLanguage(childNodes.item(k).getTextContent());
 						}
 					}
